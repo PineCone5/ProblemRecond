@@ -116,5 +116,20 @@ python支持的文件包括`.py`、`.pyc`、`.pyw`、`.pyo`、`.pyd`，以下简
 
 ---
 
-
+## 附录
+### 附录1：查看SCADE的Python版本
+1. 打开SCADE的`ScriptWizard`；  
+    <img src="image\ScriptWizard.png" width="30%">
+2. 随意选择一个脚本类型(如：`project`)；  
+    <img src="image\ScriptWizard1.png" width="20%">
+3. 选择创建Python脚本；  
+    <img src="image\ScriptWizard2.png" width="80%">
+4. 删除脚本中原有代码，编写以下代码；  
+    ```python
+    import scade
+    import sys
+    scade.output(sys.version)
+    ```
+5. 按<kbd>Ctrl</kbd>+<kbd>F5</kbd>键运行脚本，在*Output*中名为*script*的Tab页可以看到python的版本。  
+    <img src="image\Output_Script.png" width="70%">
 
